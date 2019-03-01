@@ -7,14 +7,14 @@ plan:
 
 profiles:
   first:
+    agent: agent2
     environment:
       MY_PROFILE: "first"
     script: bin/test
-    test_pattern:
-      - test/*_test.rb
     profile_config:
       advance_on: 'always'
   second:
+    agent: emcee
     environment:
       MY_PROFILE: "second"
     script: bin/test
